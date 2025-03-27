@@ -50,10 +50,13 @@ body {
     margin: 2em 8em; /* Margens ao redor */
     width: 80%; /* Largura relativa */
     max-width: 300px; /* Largura máxima */
+    transition: all 0.3s ease-in-out;
 }
 
 .botao__secundario {
+    
     /* Estilização do botão secundário */
+    
     background-color: transparent; /* Fundo transparente */
     border: 2px solid var(--branco-principal); /* Borda branca */
     text-decoration: none; /* Remove sublinhado */
@@ -173,6 +176,7 @@ margin: 10px;
  text-decoration: none;
 color: var(--cinza-secundario);
 font-size: 1.3em;
+transition: all 0.3s ease-in-out;
 }
 
 
@@ -180,4 +184,14 @@ font-size: 1.3em;
 display: flex;
 text-align: center;
 font-size: 1em;
+
+}
+.lista__link:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 50px rgba(18, 45, 248, 0.7);
+ 
+}
+.container__botao:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.7);
 }
