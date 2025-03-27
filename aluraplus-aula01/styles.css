@@ -1,0 +1,183 @@
+:root {
+    /* Definição de variáveis globais para reutilização de cores e fontes */
+    --branco-principal: #FFFFFF;  /* Cor branca principal usada no texto */
+    --cinza-secundario: #C0C0C0;  /* Cor cinza usada em textos secundários */
+    --botao-azul: #167BF7;        /* Cor azul usada nos botões */
+    --cor-de-fundo: #00030C;      /* Cor de fundo da página */
+    --font-principal: 'Inter', sans-serif; /* Fonte principal usada no site */
+}
+
+body {
+    /* Estilização do corpo da página */
+    background-color: var(--cor-de-fundo); /* Aplica a cor de fundo */
+    color: var(--branco-principal); /* Define a cor do texto */
+    font-family: var(--font-principal); /* Define a fonte principal */
+    font-size: 16px; /* Tamanho base da fonte */
+    font-weight: 400; /* Peso da fonte normal */
+}
+
+* {
+    /* Remove margens e preenchimentos padrão de todos os elementos */
+    margin: 0;
+    padding: 0;
+}
+
+.principal {
+    /* Configuração da seção principal */
+    background-image: url("img/Background.png"); /* Define a imagem de fundo */
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+    background-size: contain; /* Ajusta a imagem para caber no elemento */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    text-align: center; /* Centraliza o texto */
+}
+
+.container {
+    /* Layout da página com grid */
+    height: 100vh; /* Ocupa toda a altura da tela */
+    display: grid; /* Usa grid para organização */
+    grid-template-columns: 50% 50%; /* Divide a tela em duas colunas iguais */
+}
+
+.container__botao {
+    /* Estilização do botão principal */
+    border-radius: 15px; /* Borda arredondada */
+    background-color: var(--botao-azul); /* Cor do botão */
+    padding: 1em; /* Espaçamento interno */
+    color: var(--branco-principal); /* Cor do texto */
+    display: block; /* Exibe como bloco */
+    text-decoration: none; /* Remove sublinhado */
+    text-align: center; /* Centraliza o texto */
+    margin: 2em 8em; /* Margens ao redor */
+    width: 80%; /* Largura relativa */
+    max-width: 300px; /* Largura máxima */
+}
+
+.botao__secundario {
+    /* Estilização do botão secundário */
+    background-color: transparent; /* Fundo transparente */
+    border: 2px solid var(--branco-principal); /* Borda branca */
+    text-decoration: none; /* Remove sublinhado */
+}
+
+.aviso_rodape {
+    /* Estilização do texto de aviso no rodapé */
+    color: var(--cinza-secundario); /* Cor cinza para destaque menor */
+    font-size: 16px; /* Tamanho da fonte */
+}
+
+.container__imagen {
+    /* Configuração das imagens dentro do container */
+    margin: 3em auto; /* Centraliza a imagem verticalmente */
+    max-width: 100%; /* Garante que a imagem não ultrapasse seu container */
+}
+
+.container__caixa {
+    /* Define o container principal */
+    max-width: 600px; /* Largura máxima do container */
+    margin: auto; /* Centraliza o conteúdo */
+    padding: 1em; /* Espaçamento interno */
+}
+
+.container__secundario {
+    /* Organização do container secundário */
+    display: flex; /* Usa flexbox */
+    align-items: center; /* Centraliza os itens verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    gap: 1em; /* Espaçamento entre os elementos */
+    padding: 2em; /* Espaçamento interno */
+}
+
+.imagen__secundaria{
+    /* Configuração das imagens secundárias */
+    width: 35%; /* Define um tamanho relativo */
+    margin: 4em; /* Espaçamento externo */
+}
+
+.descricao__titulo{
+    /* Estilização do título da descrição */
+    font-size: 3em; /* Tamanho grande para destaque */
+}
+
+.descricao__texto{
+    /* Estilização do texto de descrição */
+    text-align: left; /* Alinhamento do texto à esquerda */
+    font-size: 1.3em; /* Tamanho do texto */
+    color: var(--cinza-secundario); /* Cor cinza para diferenciação */
+}
+ 
+.container__titulo{    
+    /* Organização do container de título */
+    display: flex;
+    flex-direction: column; /* Organiza os elementos em coluna */
+    align-items: flex-start; /* Alinha os itens à esquerda */
+}
+
+.container__dispositivos{
+    /* Organização da seção de dispositivos */
+    display: flex;
+    flex-direction: column; /* Organiza os itens em coluna */
+    justify-content: space-between; /* Distribui o espaço entre os elementos */
+    align-items: center; /* Centraliza os itens */
+    text-align: center; /* Centraliza o texto */
+}
+
+.container__imagens {
+    /* Organização das imagens dentro de um container */
+    display: flex; /* Usa flexbox para alinhar horizontalmente */
+    justify-content: space-between; /* Mantém espaço entre as imagens */
+    align-items: center; /* Centraliza verticalmente os itens */
+    gap: 2em; /* Define espaçamento entre as imagens */
+}
+
+.imagem-com-texto {
+    /* Configuração para imagens que possuem textos abaixo */
+    display: flex;
+    flex-direction: column; /* Mantém o texto abaixo da imagem */
+    align-items: center; /* Centraliza horizontalmente */
+    text-align: center; /* Centraliza o texto */
+}
+
+.imagem-com-texto img {
+    /* Configuração do tamanho das imagens */
+    width: 100%; /* Garante que as imagens se ajustem ao container */
+    height: auto; /* Mantém a proporção */
+}
+
+.imagem-com-texto p {
+    /* Estilização do texto abaixo da imagem */
+    margin-top: 10px; /* Adiciona espaço entre a imagem e o texto */
+    font-size: 2.2em; /* Tamanho maior para destaque */
+}
+.rodape{
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 5em;
+margin: 10px;
+}
+
+.rodape__lista{
+    display: flex;
+    justify-content:center;
+    list-style-type: none;
+    padding: 3em;
+    margin: 10px;
+    flex-wrap: wrap;
+    gap:2em ;
+}
+
+
+
+
+.lista__link a {
+ text-decoration: none;
+color: var(--cinza-secundario);
+font-size: 1.3em;
+}
+
+
+.descricao__Final{
+display: flex;
+text-align: center;
+font-size: 1em;
+}
